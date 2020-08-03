@@ -1,0 +1,23 @@
+{
+  "@graph" : [ {
+    "@id" : "http://people.com/Gustavo",
+    "nick" : "Gus",
+    "role" : "Manager"
+  }, {
+    "@id" : "http://people.com/Martin",
+    "nick" : "Gute",
+    "role" : "Manager"
+  }, {
+    "@id" : "http://people.com/Nicolas",
+    "nick" : "Jorge",
+    "role" : "Engineer"
+  } ],
+  "@context" : {
+    "nick" : {
+      "@id" : "http://characteristics.com/nick"
+    },
+    "role" : {
+      "@id" : "http://characteristics.com/role"
+    }
+  }
+}
