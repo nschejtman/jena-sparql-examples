@@ -54,7 +54,7 @@ object Queries {
       .create(query, model)
       .execConstruct()
 
-    result.write(System.out, "JSON-LD")
+    result.write(System.out, "N-TRIPLE")
   }
 
   def ask(model: Model): Unit = {
@@ -85,7 +85,7 @@ object Queries {
       .create(query1, model)
       .execDescribe()
 
-    result1.write(System.out, "JSON-LD")
+    result1.write(System.out, "N-TRIPLE")
 
     println("DESCRIBE 2 ----------------")
     val query2 =
@@ -100,7 +100,7 @@ object Queries {
       .create(query2, model)
       .execDescribe()
 
-    result2.write(System.out, "JSON-LD")
+    result2.write(System.out, "N-TRIPLE")
   }
 
 }
